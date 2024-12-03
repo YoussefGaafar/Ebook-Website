@@ -1,0 +1,89 @@
+@import './bootstrap.scss';
+
+// For contact button in the Navbar Classes
+.navbar .btn-outline-light:hover {
+  color: var(--bs-dark);
+}
+
+.navbar {
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-sticky {
+  opacity: 0.9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+// Header Classes
+.header {
+  background: url('../images/header-background.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+// Modal Classes
+.modal-dialog {
+  max-width: 65rem; // 1040px
+}
+
+// Download Classes
+.download {
+  background: url('../images/download-background.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+// Social Media Classes
+.social-icons a {
+  color: white; /* Set icon color */
+  text-decoration: none; /* Remove underline */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.social-icons a:hover,
+.social-icons a:active {
+  color: $primary; /* Apply primary color on hover (desktop) and click/tap (mobile) */
+}
+
+// Map Class
+.map iframe {
+  left: 0;
+  top: 0;
+  height: 25rem; // 400px
+  width: 100%;
+  border: none;
+}
+
+// Media Queries
+@media (max-width: 1000px) {
+  .hero .image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero .text-container {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  footer .nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 990px) {
+  ul.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // Contact Button
+  .navbar-nav a[href='contact.html'] {
+    border: none;
+  }
+  .navbar-nav a[href='contact.html']:hover {
+    color: $secondary;
+  }
+}
