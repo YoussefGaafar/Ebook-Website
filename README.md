@@ -79,6 +79,8 @@ You can reach out to me on social media 😊:
 
 **Note:** I have added my personal social media links for this project.
 
+**For contact form submissions**, we are using Formspree. You can send me a message directly through the [Contact Page](contact.html)
+
 ---
 
 ## 🤝 Contributing
